@@ -1,0 +1,43 @@
+= Podman -- container engine
+:backend: asciidoctor
+:github-flavored:  // enables GitHub-specific features like tables, task lists, and fenced code blocks
+ifndef::env-github[:icons: font]
+ifdef::env-github[]
+// Naughty Waco Temps
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+:caution-caption: :fire:
+:important-caption: :exclamation:
+endif::[]
+
+:toc: // gets a ToC after the title
+:toclevels: 1
+// :sectnums: // gets ToC sections to be numbered
+:sectnumlevels: 3 // max # of numbering levels
+
+== Discover
+
+podman provides a daemonless container engine that improves security through rootless operation. +
+It offers an alternative to docker with more options for deployment and integration.
+
+* Podman does not require a daemon/service like docker does. Podman containers can run directly on the host OS
+* Podman does not need root privileges to run, while docker requires root
+* Podman uses user namespaces for isolation while docker uses process isolation
+* Podman has better rootless support and doesn't need root access to manage containers
+* Podman uses pods as its primary isolation and container grouping concept, docker uses containers
+* Podman has a focus on security due to its rootless architecture
+* Podman integrates with non-docker registries while docker is tightly coupled to its own registry
+* Podman has stronger Kubernetes integration via the CRI-O container runtime
+
+== Learn
+
+
+== Cultivate
+
+
+== Develop & Deploy, Master
+
+
+== Todo
+
